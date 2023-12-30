@@ -1,6 +1,6 @@
 docker network create example-app
 
-docker run -p 8888:8888 --privileged  -e GRANT_SUDO=yes --user root --network example-app  -v /Users/mubarak/Documents/deck/ML/ml_demos:/home/jovyan/work jupyter/scipy-notebook 
+docker run -p 8888:8888 --privileged  -e GRANT_SUDO=yes --user root --network example-app  -v /Users/sowji/Documents/deck/ML/ml_demos:/home/jovyan/work jupyter/scipy-notebook 
 
 -p 8888:8888: Exposes the server on host port 8888
  --privileged 
@@ -13,7 +13,7 @@ docker run -p 8888:8888 --privileged  -e GRANT_SUDO=yes --user root --network ex
 
 $ docker ps
 
-$ docker run --name mysql  --privileged  -e GRANT_SUDO=yes --user root  --network example-app  -v /Users/mubarak/Documents/deck/ML/ml_demos/LLM:/var/lib/mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=abc --restart unless-stopped mysql
+$ docker run --name mysql  --privileged  -e GRANT_SUDO=yes --user root  --network example-app  -v /Users/sowji/Documents/deck/ML/ml_demos/LLM:/var/lib/mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=abc --restart unless-stopped mysql
 
 $ sudo docker cp /Users/mubarak/Documents/deck/ML/ml_demos/LLM/mysqlsampledatabase.sql 141b253b9656:/
 
