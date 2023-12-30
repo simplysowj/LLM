@@ -23,7 +23,7 @@
 #### docker run --name mysql --privileged -e GRANT_SUDO=yes --user root --network car-network -p 3306:3306 -e MYSQL_ROOT_PASSWORD=abc --restart unless-stopped mysql
 
 ### step 5 - copy the script to SQL container
-#### sudo docker cp /Users/mubarak/Documents/deck/ML/ml_demos/LLM/mysqlsampledatabase.sql 141b253b9656:/
+#### sudo docker cp /Users/sowji/Documents/deck/ML/ml_demos/LLM/mysqlsampledatabase.sql 141b253b9656:/
 
 ### step 6 - get into the sql container
 #### docker exec -it 8b8a101bf869 /bin/bash
