@@ -15,7 +15,7 @@ $ docker ps
 
 $ docker run --name mysql  --privileged  -e GRANT_SUDO=yes --user root  --network example-app  -v /Users/sowji/Documents/deck/ML/ml_demos/LLM:/var/lib/mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=abc --restart unless-stopped mysql
 
-$ sudo docker cp /Users/mubarak/Documents/deck/ML/ml_demos/LLM/mysqlsampledatabase.sql 141b253b9656:/
+$ sudo docker cp /Users/sowji/Documents/deck/ML/ml_demos/LLM/mysqlsampledatabase.sql 141b253b9656:/
 
 $ docker exec -it 8b8a101bf869 /bin/bash
 
